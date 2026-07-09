@@ -1,24 +1,24 @@
 # off-mesh-parser-c
 
-A C program that parses 3D mesh files in the Object File Format (.off) using a Face-Vertex data structure, and exports 2D SVG projections of the meshes.
+Um programa em C que lê arquivos de malhas 3D no formato Object File Format (.off) utilizando uma estrutura de dados de Face-Vértice, e exporta projeções 2D dessas malhas em formato SVG.
 
-## Files
-- `malha_face_vertice.c`: The main source code. It reads the `.off` files and exports them to `.svg`.
-- `triangles.off`: A sample mesh file containing a simple triangular geometry.
-- `hand-hybrid.off`: A sample mesh file containing a more complex geometry of a hand.
-- `triangles.svg`: Generated 2D projection of `triangles.off`.
-- `hand-hybrid.svg`: Generated 2D projection of `hand-hybrid.off`.
+## Arquivos
+- `malha_face_vertice.c`: O código-fonte principal. Ele lê os arquivos `.off` e os exporta para `.svg`.
+- `triangles.off`: Um arquivo de malha de exemplo contendo uma geometria simples de triângulos.
+- `hand-hybrid.off`: Um arquivo de malha de exemplo contendo uma geometria mais complexa de uma mão.
+- `triangles.svg`: Projeção 2D gerada a partir do `triangles.off`.
+- `hand-hybrid.svg`: Projeção 2D gerada a partir do `hand-hybrid.off`.
 
-## How to Compile and Run
-Use GCC or any standard C compiler to compile the program:
+## Como Compilar e Executar
+Utilize o GCC ou qualquer compilador C padrão para compilar o programa:
 ```bash
 gcc malha_face_vertice.c -o malha
 ```
 
-Run the program:
+Para executar o programa:
 ```bash
 ./malha
 ```
-(On Windows: `malha.exe`)
+(No Windows: `malha.exe`)
 
-The program will automatically load `triangles.off` and `hand-hybrid.off`, print a summary of their vertices and faces, and generate the corresponding `.svg` files.
+O programa irá carregar automaticamente os arquivos `triangles.off` e `hand-hybrid.off`, imprimir um resumo dos seus vértices e faces no terminal, e gerar os arquivos `.svg` correspondentes.
